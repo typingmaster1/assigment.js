@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1.        Declare variables called 'country', 'continent' and 'population' and 
+// assign their values according to your own country (population in millions)
+
+// let country="Pakistan"
+// let continent="Asia"
+// let population="241 million"
+// console.log(country,continent,population)
+
+// 2.1. Declare a variable called 'isIsland' and set its value according to your 
+// country. The variable should hold a Boolean value. Also declare a variable
+// 'language', but don't assign it any value yet
+// let isIsland = false;   
+// let language;   
+// console.log(typeof isIsland);  
+
+// 3.  1. Set the value of 'language' to the language spoken where you live (some 
+// countries have multiple languages, but just choose one)
+// 2. Think about which variables should be const variables (which values will never 
+// change, and which might change?). Then, change these variables to const.
+// 3. Try to change one of the changed variables now, and observe what happens
+// language="Urdu";
+// const country="Pakistan";
+// const continent="Asia"
+// const isIsland=false;
+// console.log(country,language,continent,typeof isIsland)
+
+
+// 3.LECTURE: Basic Operators
+// 1. If your country split in half, and each half would contain half the population, 
+// then how many people would live in each half?
+// 2. Increase the population of your country by 1 and log the result to the console
+
+// let Pakistan=200;
+
+// console.log(Pakistan/2)
+// // 2. Increase the population of your country by 1 and log the result to the console
+// let increase=Pakistan+1
+// console.log(increase)
+
+// 3. Finland has a population of 6 million. Does your country have more people than 
+// Finland?
+// 4. The average population of a country is 33 million people. Does your country 
+// have less people than the average country?
+
+// console.log(Pakistan>6)
+// console.log(Pakistan<33)
+
+// 5. Based on the variables you created, create a new variable 'description'
+// which contains a string with this format: 'Portugal is in Europe, and its 11 million 
+// // people speak portuguese'
+// let country="Portugal";
+// let continent="Europe";
+// let population="11";
+// let language="Portuguese";
+// let description=country +' is in ' +continent+ ',and its ' +population  +' million people speak,' +language;
+// console.log(description)
+
+// LECTURE: Logical Operators
+// 2. Let's say Sarah is looking for a new country to live in. She wants to live in a 
+// country that speaks english, has less than 50 million people and is not an 
+// island.
+
+// let country="Pakistan";
+// let population=241;
+// let language="english"
+// let isIsland=false;
+// if (language == 'english' && population < 50 && !isIsland){
+//      console.log(`You should live in ${country} :)`);
+//    } else {     
+//     console.log(`${country} does not meet your criteria`);   
+// }
+
+// LECTURE: Type Conversion and Coercion 
+//    console.log('9' - '5'); // -> 4  
+//     console.log('19' - '13' + '17') ; // '617'  
+//       console.log('19' - '13' + 17); // -> 23  
+//        console.log('123' < 57); // -> false   
+//        console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+// 
+// let numNeighbours1 = prompt( 'How many neighbour countries does your country have?',   ); 
+//     
+//      let numNeighbours = Number( prompt('How many neighbour countries does your country      have?'),   ); 
+//         if (numNeighbours === 1) 
+//         {
+//                  console.log('Only 1 border!');  
+//      }  else if (numNeighbours > 1) 
+//         { 
+//                 console.log('More than 1 border');   
+//     }else { 
+//             console.log('No borders');   
+//         }
+
+let numNeighbours1= prompt(`How many neighb does your country have?`,  );
+let numNeighbours= Number(prompt(`how many neigb countries does your coun have?`), );
+if (numNeighbours==1)
+{
+    console.log(`only 1 border! `);
+} else if(numNeighbours>1){
+console.log(`more than 1 border`);
+}else{
+    console.log(`no border`);
+}
+
+    </script>
+</body>
+</html>
