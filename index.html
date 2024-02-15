@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="Digitalclock" class="clock" onload="showTime()"></div>
+    <div id="Digital" class="clock" onload="Time()"></div>
 
 <script>
-function showTime(){
+function Time(){
     let date = new Date();
      h = date.getHours(); 
      m = date.getMinutes(); 
@@ -31,17 +31,18 @@ function showTime(){
     s = (s < 10) ? "0" + s : s;
     
      time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("Digitalclock").innerText = time;
-    document.getElementById("Digitalclock ").textContent = time;
+    document.getElementById("Digital").innerText = time;
+    document.getElementById("Digital ").textContent = time;
     
-    setTimeout(showTime, 1000);
+    setTimeout(Time, 100);
     
 }
 
-showTime();
+Time();
 
 
 
+// console.log(3+4+`5`);
 
 
 
