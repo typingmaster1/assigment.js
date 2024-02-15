@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
+    <div id="Digitalclock" class="clock" onload="showTime()"></div>
+
+<script>
+function showTime(){
+    let date = new Date();
+     h = date.getHours(); 
+     m = date.getMinutes(); 
+     s = date.getSeconds(); 
+     session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+     time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("Digitalclock").innerText = time;
+    document.getElementById("Digitalclock ").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+
+
+
+
+
+
+
+
+
+
+
 // 1.        Declare variables called 'country', 'continent' and 'population' and 
 // assign their values according to your own country (population in millions)
 
@@ -161,6 +204,35 @@
 // for(let i=100;i>=1;i--){
 // console.log(i);
 // }
+
+// let a=Math.random();
+// let score=a*8+1;
+// let b=Math.trunc(score);
+// console.log(b);
+// if(b==1){
+// alert(`out`)
+//     console.log(`You out`);
+// }
+// else if(b==6){
+// alert(`you won`)
+//     console.log(`You won`);
+// }
+// else{
+//     alert(`try gain`)
+//     console.log(`try again`);
+// }
+
+// let x=23
+// x.toString();
+// console.log(x+5)
+
+// let text="Muhammad"
+// console.log(text.toLocaleLowerCase());
+// console.log(text.toUpperCase())
+// let a=25;
+// let c=a.toString();
+// console.log(c+2)
+
     </script>
 </body>
 </html>
